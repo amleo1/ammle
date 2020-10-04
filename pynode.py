@@ -27,6 +27,12 @@ class LinkedList:
 			current = next
 		self.head = prev 
 		
+print "Given Linked List"
+llist.printList() 
+llist.reverse() 
+print "\nReversed Linked List"
+llist.printList() 
+
 	# Function to insert a new node at the beginning 
 	def push(self, new_data): 
 		new_node = Node(new_data) 
