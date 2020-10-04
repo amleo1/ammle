@@ -2,7 +2,7 @@
 # Time Complexity : O(n) 
 # Space Complexity : O(1) 
 
-# Node class 
+# Node class hevy
 class Node: 
 
 	# Constructor to initialize the node object 
