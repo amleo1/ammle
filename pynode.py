@@ -53,3 +53,8 @@ llist.printList()
 llist.reverse() 
 print "\nReversed Linked List"
 llist.printList() 
+xyz=100
+zyx=200
+xxx=xyz+zyx
+print(xxx)
+print("End of the program")
