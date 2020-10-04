@@ -35,7 +35,9 @@ void insertFirst(int key, int data) {
    link->data = data;
 	
    //point it to old first node
-   link->next = head;
+ 
+	//hu
+	link->next = head;
 	
    //point first to new first node
    head = link;
@@ -96,7 +98,9 @@ struct node* find(int key) {
    //if data found, return the current Link
    return current;
 }
-
+void hi(){
+print("hell");
+}
 //delete a link with given key
 struct node* delete(int key) {
 
@@ -108,7 +112,7 @@ struct node* delete(int key) {
    if(head == NULL) {
       return NULL;
    }
-
+//hey leo
    //navigate through list
    while(current->key != key) {
 
@@ -211,10 +215,10 @@ void main() {
    
    printf("\nRestored List: ");
    printList();
-   printf("\n");  
+
 
    struct node *foundLink = find(4);
-	
+	//hey leo
    if(foundLink != NULL) {
       printf("Element found: ");
       printf("(%d,%d) ",foundLink->key,foundLink->data);
@@ -226,7 +230,7 @@ void main() {
    delete(4);
    printf("List after deleting an item: ");
    printList();
-   printf("\n");
+//    printf("\n");
    foundLink = find(4);
 	
    if(foundLink != NULL) {
@@ -237,7 +241,7 @@ void main() {
       printf("Element not found.");
    }
 	
-   printf("\n");
+//    printf("\n");
    sort();
 	
    printf("List after sorting the data: ");
