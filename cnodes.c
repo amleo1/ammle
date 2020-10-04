@@ -94,6 +94,20 @@ struct node* find(int key) {
          current = current->next;
       }
    }      
+	//check the file
+	//display the list
+void printList() {
+   struct node *ptr = head;
+   printf("\n[ ");
+	
+   //start from the beginning
+   while(ptr != NULL) {
+      printf("(%d,%d) ",ptr->key,ptr->data);
+      ptr = ptr->next;
+   }
+	
+   printf(" ]");
+}
 	
    //if data found, return the current Link
    return current;
